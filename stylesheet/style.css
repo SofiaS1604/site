@@ -160,6 +160,7 @@ main{
     text-align: center;
     font-size: 25px;
     margin-bottom: 25px;
+    font-weight: bold;
 }
 
 .about__image{
@@ -176,7 +177,7 @@ main{
     width: 800px;
     height: 400px;
     overflow: hidden;
-    margin: 100px auto 0;
+    margin: 50px auto 0;
     display: flex;
 }
 
@@ -388,7 +389,7 @@ main{
 
 .card-teachers{
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -595,6 +596,7 @@ th:first-child, td:first-child {
     text-align: center;
     font-size: 25px;
     margin-bottom: 25px;
+    font-weight: bold;
 }
 
 .partners__container{
@@ -644,6 +646,7 @@ th:first-child, td:first-child {
 .contacts__title{
     text-align: center;
     font-size: 25px;
+    font-weight: bold;
 }
 
 .contacts iframe{
