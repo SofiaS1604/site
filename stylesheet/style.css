@@ -249,7 +249,6 @@ main{
     height: 500px;
     background-size: cover;
     background-position: center center;
-    float: left;
     margin-right: 25px;
 }
 
@@ -677,6 +676,7 @@ th:first-child, td:first-child {
 .partners__container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .partners{
@@ -718,6 +718,11 @@ th:first-child, td:first-child {
     margin-top: 35px;
 }
 
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .contacts__title{
     text-align: center;
     font-size: 30px;
@@ -727,6 +732,7 @@ th:first-child, td:first-child {
 .contacts iframe{
     width: 50vw;
     height: 40vh;
+    max-height: 35vw;
     margin-top: 0;
     margin-right: 50px;
     margin-left: 50px;
@@ -827,6 +833,7 @@ p+p{
     font-size: 16px;
 }
 
+
 @media (max-width: 1300px){
     .menu{
         display: block;
@@ -856,8 +863,47 @@ p+p{
         display: flex;
     }
 
-    header{
-        position: relative;
+    .partners__container{
+        justify-content: center;
     }
 
+    .cards{
+        justify-content: center;
+    }
+
+
 }
+
+@media (min-width: 1150px) {
+    .about__image{
+        float: left;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .about__image{
+        margin: 0 auto 25px;
+    }
+
+    .about__text{
+        margin: 0 auto;
+        width: 80vw;
+    }
+
+    .block-course__text{
+        margin: 0 auto;
+        width: 80vw;
+    }
+
+    .block-course img{
+        margin: 0 auto 25px;
+        width: 80vw;
+    }
+
+    .block-course{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
