@@ -1,4 +1,10 @@
 $(document).ready(function(){
+
+    $('.menu_item').click(function () {
+        $('.menu_mobile').removeClass('menu_mobile-active');
+        $('.menu').removeClass('active_menu');
+    });
+
     $('.navigation-link').on('click', function(e){
         let anchor = $(this);
         $('html, body').stop().animate({
@@ -19,6 +25,19 @@ $(document).ready(function(){
     },3000);
 
 
+    let active = 0;
+
+    $('.menu').click(function () {
+        if(active === 1){
+            $('.menu').removeClass('active_menu');
+            $('.menu_mobile').removeClass('menu_mobile-active');
+            active = 0;
+        }else{
+            $('.menu').addClass('active_menu');
+            $('.menu_mobile').addClass('menu_mobile-active');
+            active = 1;
+        }
+    });
 
 
     let slid = -700;
